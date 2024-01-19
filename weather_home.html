@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wraper">
+        <h1>Weather Info</h1>
+        <div class="menu">
+            <p class="tab" data-user>Your weather</p>
+            <p class="tab" data-search>Search Weather</p>
+            <div class="dropdown">
+                <button class="forcast " data-forcast ><img src="dropdown.jpg" alt="" ></button>
+                <div>current status</div>
+                <div>upcoming status</div>
+            </div>
+            
+        </div>
+        <div class="location sub-location">
+            <img src="location-icon-png-4246.png" alt="" loading="lazy" width="80" height="80">
+            <div>Allow Access to get weather information </div>
+            <button allow class="button">Grant location Access</button>
+            
+        </div>
+        <form class="searchpage" form="form" action="" search-form>
+            <input placeholder="Search city" type="text" searchinput>
+            <button type="submit"><img src="lense5.png" alt="" width="20" height="20"></button>
+        </form>
+        <div class="loading sub-loading">
+            <img src="lodingicon.gif" alt="" width="150" height="150">
+            <p>Loading...</p>
+        </div>
+        <div class="disc">
+            <div>
+            <div class="dynamic " id="pos">
+                <p cityname></p>
+                <img countryflag>
+            </div>
+            <div class="dynamic">
+                <p weather></p>
+                <img weathericon class="statusimg">
+                <p temp></p>
+            </div>
+            <div class="cards">
+                 <div class="parameter">
+                    <img src="wind.gif" alt="" width="50" height="50">
+                    <p>WINDSPEED</p>
+                    <p wind></p>
+                 </div>
+                 <div class="parameter">
+                    <img src="humidityicon.png" alt="" width="50" height="50">
+                    <p>HUMIDITY</p>
+                    <p humidity></p>
+                 </div>
+                 <div class="parameter">
+                    <img src="cloudicon.gif" alt="" width="50" height="50" >
+                    <p>CLOUDS</p>
+                    <p cloud></p>
+                 </div>
+            </div>
+        </div>
+            
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
